@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/main.dir/src/main.cc.o  -o ../bin/main 
+/usr/bin/c++    -rdynamic CMakeFiles/main.dir/src/main.cc.o CMakeFiles/main.dir/src/tgaimage.cpp.o  -o ../bin/main 

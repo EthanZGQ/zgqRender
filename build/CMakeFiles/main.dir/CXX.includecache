@@ -9,4 +9,24 @@
 /home/ethan/CPPCode/zgqRender/src/main.cc
 iostream
 -
+tgaimage.h
+/home/ethan/CPPCode/zgqRender/src/tgaimage.h
+
+/home/ethan/CPPCode/zgqRender/src/tgaimage.cpp
+iostream
+-
+fstream
+-
+string.h
+-
+time.h
+-
+math.h
+-
+tgaimage.h
+/home/ethan/CPPCode/zgqRender/src/tgaimage.h
+
+/home/ethan/CPPCode/zgqRender/src/tgaimage.h
+fstream
+-
 

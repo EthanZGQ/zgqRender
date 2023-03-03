@@ -150,6 +150,33 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/tgaimage.o: src/tgaimage.cpp.o
+
+.PHONY : src/tgaimage.o
+
+# target to build an object file
+src/tgaimage.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tgaimage.cpp.o
+.PHONY : src/tgaimage.cpp.o
+
+src/tgaimage.i: src/tgaimage.cpp.i
+
+.PHONY : src/tgaimage.i
+
+# target to preprocess a source file
+src/tgaimage.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tgaimage.cpp.i
+.PHONY : src/tgaimage.cpp.i
+
+src/tgaimage.s: src/tgaimage.cpp.s
+
+.PHONY : src/tgaimage.s
+
+# target to generate assembly for a file
+src/tgaimage.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tgaimage.cpp.s
+.PHONY : src/tgaimage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tgaimage.o"
+	@echo "... src/tgaimage.i"
+	@echo "... src/tgaimage.s"
 .PHONY : help
 
 

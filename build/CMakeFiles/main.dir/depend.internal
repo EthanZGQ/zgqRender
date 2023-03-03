@@ -3,3 +3,7 @@
 
 CMakeFiles/main.dir/src/main.cc.o
  /home/ethan/CPPCode/zgqRender/src/main.cc
+ /home/ethan/CPPCode/zgqRender/src/tgaimage.h
+CMakeFiles/main.dir/src/tgaimage.cpp.o
+ /home/ethan/CPPCode/zgqRender/src/tgaimage.cpp
+ /home/ethan/CPPCode/zgqRender/src/tgaimage.h

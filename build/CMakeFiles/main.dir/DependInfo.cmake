@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ethan/CPPCode/zgqRender/src/main.cc" "/home/ethan/CPPCode/zgqRender/build/CMakeFiles/main.dir/src/main.cc.o"
+  "/home/ethan/CPPCode/zgqRender/src/tgaimage.cpp" "/home/ethan/CPPCode/zgqRender/build/CMakeFiles/main.dir/src/tgaimage.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
