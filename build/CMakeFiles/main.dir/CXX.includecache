@@ -6,11 +6,45 @@
 
 #IncludeRegexTransform: 
 
+/home/ethan/CPPCode/zgqRender/src/geometry.h
+cmath
+-
+
 /home/ethan/CPPCode/zgqRender/src/main.cc
 iostream
 -
 tgaimage.h
 /home/ethan/CPPCode/zgqRender/src/tgaimage.h
+tool.h
+/home/ethan/CPPCode/zgqRender/src/tool.h
+model.h
+/home/ethan/CPPCode/zgqRender/src/model.h
+string
+-
+memory
+-
+stdlib.h
+-
+
+/home/ethan/CPPCode/zgqRender/src/model.cpp
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+vector
+-
+model.h
+/home/ethan/CPPCode/zgqRender/src/model.h
+
+/home/ethan/CPPCode/zgqRender/src/model.h
+vector
+-
+geometry.h
+/home/ethan/CPPCode/zgqRender/src/geometry.h
 
 /home/ethan/CPPCode/zgqRender/src/tgaimage.cpp
 iostream
@@ -29,4 +63,16 @@ tgaimage.h
 /home/ethan/CPPCode/zgqRender/src/tgaimage.h
 fstream
 -
+
+/home/ethan/CPPCode/zgqRender/src/tool.cpp
+tool.h
+/home/ethan/CPPCode/zgqRender/src/tool.h
+
+/home/ethan/CPPCode/zgqRender/src/tool.h
+tgaimage.h
+/home/ethan/CPPCode/zgqRender/src/tgaimage.h
+algorithm
+-
+geometry.h
+/home/ethan/CPPCode/zgqRender/src/geometry.h
 

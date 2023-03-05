@@ -81,9 +81,33 @@ CMakeFiles/main.dir/src/main.cc.o.provides: CMakeFiles/main.dir/src/main.cc.o.re
 CMakeFiles/main.dir/src/main.cc.o.provides.build: CMakeFiles/main.dir/src/main.cc.o
 
 
+CMakeFiles/main.dir/src/model.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/model.cpp.o: ../src/model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/model.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/model.cpp.o -c /home/ethan/CPPCode/zgqRender/src/model.cpp
+
+CMakeFiles/main.dir/src/model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/CPPCode/zgqRender/src/model.cpp > CMakeFiles/main.dir/src/model.cpp.i
+
+CMakeFiles/main.dir/src/model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/CPPCode/zgqRender/src/model.cpp -o CMakeFiles/main.dir/src/model.cpp.s
+
+CMakeFiles/main.dir/src/model.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/model.cpp.o.requires
+
+CMakeFiles/main.dir/src/model.cpp.o.provides: CMakeFiles/main.dir/src/model.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/model.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/model.cpp.o.provides
+
+CMakeFiles/main.dir/src/model.cpp.o.provides.build: CMakeFiles/main.dir/src/model.cpp.o
+
+
 CMakeFiles/main.dir/src/tgaimage.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/tgaimage.cpp.o: ../src/tgaimage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/tgaimage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/tgaimage.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/tgaimage.cpp.o -c /home/ethan/CPPCode/zgqRender/src/tgaimage.cpp
 
 CMakeFiles/main.dir/src/tgaimage.cpp.i: cmake_force
@@ -105,19 +129,47 @@ CMakeFiles/main.dir/src/tgaimage.cpp.o.provides: CMakeFiles/main.dir/src/tgaimag
 CMakeFiles/main.dir/src/tgaimage.cpp.o.provides.build: CMakeFiles/main.dir/src/tgaimage.cpp.o
 
 
+CMakeFiles/main.dir/src/tool.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tool.cpp.o: ../src/tool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/tool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/tool.cpp.o -c /home/ethan/CPPCode/zgqRender/src/tool.cpp
+
+CMakeFiles/main.dir/src/tool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/tool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/CPPCode/zgqRender/src/tool.cpp > CMakeFiles/main.dir/src/tool.cpp.i
+
+CMakeFiles/main.dir/src/tool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/tool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/CPPCode/zgqRender/src/tool.cpp -o CMakeFiles/main.dir/src/tool.cpp.s
+
+CMakeFiles/main.dir/src/tool.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/tool.cpp.o.requires
+
+CMakeFiles/main.dir/src/tool.cpp.o.provides: CMakeFiles/main.dir/src/tool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tool.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/tool.cpp.o.provides
+
+CMakeFiles/main.dir/src/tool.cpp.o.provides.build: CMakeFiles/main.dir/src/tool.cpp.o
+
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.cc.o" \
-"CMakeFiles/main.dir/src/tgaimage.cpp.o"
+"CMakeFiles/main.dir/src/model.cpp.o" \
+"CMakeFiles/main.dir/src/tgaimage.cpp.o" \
+"CMakeFiles/main.dir/src/tool.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 ../bin/main: CMakeFiles/main.dir/src/main.cc.o
+../bin/main: CMakeFiles/main.dir/src/model.cpp.o
 ../bin/main: CMakeFiles/main.dir/src/tgaimage.cpp.o
+../bin/main: CMakeFiles/main.dir/src/tool.cpp.o
 ../bin/main: CMakeFiles/main.dir/build.make
 ../bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/CPPCode/zgqRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +178,9 @@ CMakeFiles/main.dir/build: ../bin/main
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/main.cc.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/model.cpp.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/tgaimage.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/tool.cpp.o.requires
 
 .PHONY : CMakeFiles/main.dir/requires
 

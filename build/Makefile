@@ -150,6 +150,33 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/model.o: src/model.cpp.o
+
+.PHONY : src/model.o
+
+# target to build an object file
+src/model.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/model.cpp.o
+.PHONY : src/model.cpp.o
+
+src/model.i: src/model.cpp.i
+
+.PHONY : src/model.i
+
+# target to preprocess a source file
+src/model.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/model.cpp.i
+.PHONY : src/model.cpp.i
+
+src/model.s: src/model.cpp.s
+
+.PHONY : src/model.s
+
+# target to generate assembly for a file
+src/model.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/model.cpp.s
+.PHONY : src/model.cpp.s
+
 src/tgaimage.o: src/tgaimage.cpp.o
 
 .PHONY : src/tgaimage.o
@@ -177,6 +204,33 @@ src/tgaimage.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tgaimage.cpp.s
 .PHONY : src/tgaimage.cpp.s
 
+src/tool.o: src/tool.cpp.o
+
+.PHONY : src/tool.o
+
+# target to build an object file
+src/tool.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tool.cpp.o
+.PHONY : src/tool.cpp.o
+
+src/tool.i: src/tool.cpp.i
+
+.PHONY : src/tool.i
+
+# target to preprocess a source file
+src/tool.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tool.cpp.i
+.PHONY : src/tool.cpp.i
+
+src/tool.s: src/tool.cpp.s
+
+.PHONY : src/tool.s
+
+# target to generate assembly for a file
+src/tool.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tool.cpp.s
+.PHONY : src/tool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +243,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/model.o"
+	@echo "... src/model.i"
+	@echo "... src/model.s"
 	@echo "... src/tgaimage.o"
 	@echo "... src/tgaimage.i"
 	@echo "... src/tgaimage.s"
+	@echo "... src/tool.o"
+	@echo "... src/tool.i"
+	@echo "... src/tool.s"
 .PHONY : help
 
 
