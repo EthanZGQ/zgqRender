@@ -5,29 +5,56 @@
 #include <vector>
 #include "model.h"
 
-Model::Model(const char *filename) : verts_(), faces_() {
-    std::ifstream in;
-    in.open (filename, std::ifstream::in);
-    if (in.fail()) return;
+Model::Model(const char *filename) : verts_(), faces_() , textures_(),normals_(){
+    std::fstream file(filename);
+    if(!file.is_open()){
+        std::cout << "error! can't open the file !" ;
+    }
+    std::vector<Vec3f> verts_;
     std::string line;
-    while (!in.eof()) {
-        std::getline(in, line);
-        std::istringstream iss(line.c_str());
+    int v = 0 , vt = 0 , vn = 0 , f = 0;
+    while(!file.eof()){
+        std::getline(file , line);
+        std::istringstream iss(line);
         char trash;
-        if (!line.compare(0, 2, "v ")) {
+        if(line[0] == '#') continue;
+        else if(line.compare(0,2,"v ") == 0){
+            iss>>trash;
+            Vec3f temp;
+            iss >> temp.x >> temp.y >> temp.z;
+            verts_.push_back(temp);
+            ++v;
+        }
+        else if(line.compare(0 , 2 , "vt")==0){
+            iss >> trash >> trash;
+            Vec2f temp;
+            iss >> temp.x >> temp.y;
+            textures_.push_back(temp);
+            ++vt;
+        }
+        else if(line.compare(0,2,"vn")==0){
+            iss >> trash >>trash;
+            Vec3f temp ;
+            iss >> temp.x >> temp.y >>temp.z;
+            normals_.push_back(temp);
+            ++vn;
+        }
+        else if(line.compare(0 ,2 ,"f ") == 0){
+            std::vector<std::vector<int>> temp(3 , std::vector<int>());
             iss >> trash;
-            Vec3f v;
-            for (int i=0;i<3;i++) iss >> v.raw[i];
-            verts_.push_back(v);
-        } else if (!line.compare(0, 2, "f ")) {
-            std::vector<int> f;
-            int itrash, idx;
-            iss >> trash;
-            while (iss >> idx >> trash >> itrash >> trash >> itrash) {
-                idx--; // in wavefront obj all indices start at 1, not zero
-                f.push_back(idx);
+            for(int i = 0 ; i < 3 ; i++){
+                int mem;
+                iss >> mem;
+                temp[0].push_back(mem);
+                iss >> trash;
+                iss >>mem;
+                temp[1].push_back(mem);
+                iss>>trash;
+                iss >>mem;
+                temp[2].push_back(mem);
             }
-            faces_.push_back(f);
+            faces_.push_back(temp);
+            ++f;
         }
     }
     std::cerr << "# v# " << verts_.size() << " f# "  << faces_.size() << std::endl;
@@ -44,10 +71,18 @@ int Model::nfaces() {
     return (int)faces_.size();
 }
 
-std::vector<int> Model::face(int idx) {
+const std::vector<std::vector<int>> & Model::face(int idx) {
     return faces_[idx];
 }
 
 Vec3f Model::vert(int i) {
     return verts_[i];
+}
+
+Vec2f texture(int i){
+    return textures_[i];
+}
+
+Vec3f normal(int i){
+    return normals_[i];
 }
